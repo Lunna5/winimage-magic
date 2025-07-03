@@ -27,7 +27,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            target\release\myapp.exe
-            assets\uninstall.reg
+            target/release/myapp.exe
+            assets/uninstall.reg
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}

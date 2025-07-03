@@ -36,7 +36,7 @@ impl WindowsRegistryInstaller {
             .open_subkey_with_flags("SystemFileAssociations", KEY_WRITE)
             .unwrap();
 
-        println!("Installing format: {}", format.to_string());
+        info!("Installing format: {}", format.to_string());
 
         let shell = base
             .create_subkey_with_flags(format!("{}\\shell", format.registry_association_key()), KEY_WRITE)
