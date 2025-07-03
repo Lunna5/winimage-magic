@@ -27,7 +27,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            target/release/myapp.exe
+            target/release/winimage-magic.exe
             assets/uninstall.reg
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
