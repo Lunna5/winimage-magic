@@ -23,5 +23,7 @@ jobs:
           files: |
             target/release/winimage-magic.exe
             assets/uninstall.reg
+            assets/install.ps1
+            assets/uninstall.ps1
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
