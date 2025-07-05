@@ -10,10 +10,13 @@ A small utility for Windows that adds powerful image conversion options to your 
 
 ## Installation
 
-1. Download the latest [install.ps1 clicking here](https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1) or from the [release tab](https://github.com/Lunna5/winimage-magic/releases/)
-2. Right-click the downloaded file and select "Run with PowerShell" to install.
-3. After installation, you can access the conversion options by right-clicking on any image file in Windows Explorer.
-4. To uninstall, go to settings and search for "Add or remove programs", find "WinImage-Magic" in the list, search WinImage-Magic in the search bar, and click "Uninstall."
+1. Download the latest [install.ps1 clicking here](https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1) or from the [release tab](https://github.com/Lunna5/winimage-magic/releases/) or just run the following command:
+   ```ps
+   curl https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1 -o $env:TEMP\install-winimage-magic.ps1; powershell -ExecutionPolicy Bypass -File "$env:TEMP\install-winimage-magic.ps1"
+   ```
+3. Right-click the downloaded file and select "Run with PowerShell" to install.
+4. After installation, you can access the conversion options by right-clicking on any image file in Windows Explorer.
+5. To uninstall, go to settings and search for "Add or remove programs", find "WinImage-Magic" in the list, search WinImage-Magic in the search bar, and click "Uninstall."
 
 ## Supported Formats
 
