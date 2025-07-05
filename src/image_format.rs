@@ -116,6 +116,7 @@ impl ClapImageFormat {
             ClapImageFormat::Pnm,
             ClapImageFormat::Tiff,
             ClapImageFormat::Tga,
+            ClapImageFormat::Dds,
             ClapImageFormat::Bmp,
             ClapImageFormat::Ico,
             ClapImageFormat::Hdr,
@@ -130,6 +131,7 @@ impl ClapImageFormat {
     pub fn supported_convertable_formats(&self) -> Vec<ClapImageFormat> {
         ClapImageFormat::supported_formats()
             .into_iter()
+            .filter(|f| f != &ClapImageFormat::Dds) // DDS does not support encoding
             .filter(|f| f != self)
             .collect()
     }
