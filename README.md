@@ -12,7 +12,7 @@ A small utility for Windows that adds powerful image conversion options to your 
 
 1. Download the latest [install.ps1 clicking here](https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1) or from the [release tab](https://github.com/Lunna5/winimage-magic/releases/) or just run the following command:
    ```ps
-   curl https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1 -o $env:TEMP\install-winimage-magic.ps1; powershell -ExecutionPolicy Bypass -File "$env:TEMP\install-winimage-magic.ps1"
+   curl -L https://github.com/Lunna5/winimage-magic/releases/latest/download/install.ps1 -o $env:TEMP\install-winimage-magic.ps1; powershell -ExecutionPolicy Bypass -File "$env:TEMP\install-winimage-magic.ps1"
    ```
 2. Right-click the downloaded file and select "Run with PowerShell" to install.
 3. After installation, you can access the conversion options by right-clicking on any image file in Windows Explorer.
