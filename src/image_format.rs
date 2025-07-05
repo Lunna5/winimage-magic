@@ -116,7 +116,6 @@ impl ClapImageFormat {
             ClapImageFormat::Pnm,
             ClapImageFormat::Tiff,
             ClapImageFormat::Tga,
-            ClapImageFormat::Dds,
             ClapImageFormat::Bmp,
             ClapImageFormat::Ico,
             ClapImageFormat::Hdr,
