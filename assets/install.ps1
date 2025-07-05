@@ -73,7 +73,7 @@ $displayName = "WinImageMagic"
 $appFolder = "C:\Program Files\WinImageMagic"
 $uninstallScript = Join-Path $appFolder "uninstall.ps1"
 $displayIcon = Join-Path $appFolder "winimage-magic.exe"
-$displayVersion = "1.0.0"
+$displayVersion = "0.1.1"
 $publisher = "Lunna5"
 $installLocation = $appFolder
 
